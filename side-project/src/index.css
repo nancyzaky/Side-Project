@@ -1,13 +1,61 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.Todo_main {
+  margin-top: 20px;
+  padding-top: 2rem;
+  width: 500px;
+  height: 600px;
+  background-color: grey;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: fixed;
+  margin-bottom: 2rem;
+  /* padding-bottom: 2rem; */
+}
+
+.modal {
+  background-color: black;
+  height: 60px;
+  width: 40px;
+  padding: 2rem 2rem;
+  display: none;
+}
+.modal .display {
+  display: block;
+}
+.add_btn {
+  font-size: 40px;
+  color: rgb(135, 206, 235);
+  border: none;
+  border-radius: 30%;
+}
+.todo_btn_cont {
+  background-color: white;
+  box-shadow: none;
+  margin-top: 70%;
+  text-decoration: none;
+  position: fixed;
+}
+
+.todo_item {
+  height: 9px;
+  width: 14px;
+  background-color: white;
+}
+
+li {
+  list-style: none;
 }
