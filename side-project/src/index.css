@@ -16,25 +16,44 @@ code {
   margin-top: 20px;
   padding-top: 2rem;
   width: 500px;
-  height: 600px;
+  /* height: 600px; */
   background-color: grey;
   align-items: center;
   text-align: center;
   color: white;
-  position: fixed;
-  margin-bottom: 2rem;
-  /* padding-bottom: 2rem; */
-}
 
-.modal {
-  background-color: black;
-  height: 60px;
-  width: 40px;
-  padding: 2rem 2rem;
-  display: none;
+  margin-bottom: 2rem;
+  height: auto;
+  min-height: 30px;
+  height: auto !important;
 }
-.modal .display {
-  display: block;
+.list_items {
+  background-color: "white";
+  width: "25rem";
+  height: "6rem";
+  border-radius: "0.2rem";
+}
+.modal {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  width: 20%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+}
+.modal-container {
+  background: white;
+  border-radius: var(--radius);
+  width: 90vw;
+  height: 30vh;
+  max-width: var(--fixed-width);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
 }
 .add_btn {
   font-size: 40px;
@@ -54,6 +73,7 @@ code {
   height: 9px;
   width: 14px;
   background-color: white;
+  border-radius: 3rem;
 }
 
 li {
