@@ -13,13 +13,16 @@ function App() {
         setToDo(data);
       });
   };
+  const addToList = (obj) => {
+    setToDo([...todo, obj]);
+  };
   useEffect(() => {
     fetchUrl();
   }, []);
   return (
     <div>
       <HeaderBar />
-      <Todo todo={todo} />
+      <Todo todo={todo} addToList={addToList} />
     </div>
   );
 }

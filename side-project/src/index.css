@@ -16,20 +16,18 @@ code {
   margin-top: 20px;
   padding-top: 2rem;
   width: 500px;
-  /* height: 600px; */
   background-color: grey;
   align-items: center;
   text-align: center;
   color: white;
-
   margin-bottom: 2rem;
   height: auto;
-  min-height: 30px;
+  /* min-height: 30px; */
   height: auto !important;
 }
 .list_items {
   background-color: "white";
-  width: "25rem";
+  width: "15rem";
   height: "6rem";
   border-radius: "0.2rem";
 }
@@ -61,17 +59,10 @@ code {
   border: none;
   border-radius: 30%;
 }
-.todo_btn_cont {
-  background-color: white;
-  box-shadow: none;
-  margin-top: 70%;
-  text-decoration: none;
-  position: fixed;
-}
 
 .todo_item {
   height: 9px;
-  width: 14px;
+  width: 6px;
   background-color: white;
   border-radius: 3rem;
 }
