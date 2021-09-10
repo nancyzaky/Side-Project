@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.Header_Bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+  background-color: #282c34;
+  opacity: 60%;
+  height: 45px;
+}
+
+.Favs-Menu {
+  grid-column: 3;
+  background-color: #282c34;
+  opacity: 60%;
+  border: 0px;
+  justify-self: end;
+  padding-right: 15px;
+  font-size: larger;
+  color: black;
+}
