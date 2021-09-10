@@ -4,17 +4,18 @@ const Modal = ({ addToList }) => {
   const [input, setInput] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    fetch("http://localhost:3000/to_do", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: input }),
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        addToList(data);
-      });
-    setInput("");
+    if (input.length) {
+      fetch("http://localhost:3000/to_do", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text: input }),
+      })
+        .then((resp) => resp.json())
+        .then((data) => {
+          addToList(data);
+        });
+      setInput("");
+    }
   };
   return (
     <div className="modal_container">

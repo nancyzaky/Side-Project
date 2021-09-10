@@ -58,13 +58,17 @@ code {
   color: rgb(135, 206, 235);
   border: none;
   border-radius: 30%;
+  background: #eee;
+  box-shadow: 0 10px 10px -4px lightblue;
 }
 
 .todo_item {
-  height: 9px;
-  width: 6px;
+  height: 3rem;
+  width: 20rem;
   background-color: white;
-  border-radius: 3rem;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  display: block;
 }
 
 li {
