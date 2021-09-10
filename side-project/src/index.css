@@ -16,7 +16,8 @@ code {
   margin-top: 20px;
   padding-top: 2rem;
   width: 500px;
-  background-color: grey;
+  padding-right: 4rem;
+  background-color: rgb(224, 224, 224);
   align-items: center;
   text-align: center;
   color: white;
@@ -24,13 +25,14 @@ code {
   height: auto;
   /* min-height: 30px; */
   height: auto !important;
+  position: relative;
 }
-.list_items {
+/* .list_items {
   background-color: "white";
   width: "15rem";
   height: "6rem";
   border-radius: "0.2rem";
-}
+} */
 .modal {
   position: fixed;
   top: 30%;
@@ -60,15 +62,17 @@ code {
   border-radius: 30%;
   background: #eee;
   box-shadow: 0 10px 10px -4px lightblue;
+  margin-bottom: 1rem;
 }
 
 .todo_item {
-  height: 3rem;
-  width: 20rem;
-  background-color: white;
-  border-radius: 1rem;
-  margin-left: 2rem;
-  display: block;
+  width: 411px;
+  height: 55px;
+  left: 103px;
+  top: 304px;
+  background: rgba(196, 196, 196, 0.05);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 1rem;
 }
 
 li {

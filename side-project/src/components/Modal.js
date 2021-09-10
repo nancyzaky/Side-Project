@@ -29,7 +29,7 @@ const Modal = ({ addToList }) => {
               setInput(e.target.value);
             }}
           ></input>
-
+          <br></br>
           <button type="submit">
             <RiAddCircleFill />
           </button>
